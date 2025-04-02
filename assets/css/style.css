@@ -189,9 +189,6 @@ section h2 {
   gap: 4rem;
   text-align: center;
   font-weight: 600;
-
-  animation: autoShow;
-  animation-timeline: view();
 }
 
 .about-text {
@@ -329,12 +326,11 @@ section h2 {
   overflow: hidden;
   background-color: #2ef5a9;
   mask-image: linear-gradient(to right, transparent, #fff 20% 60%, transparent);
-  
 }
 
 .skills-container {
   width: 100%;
-  min-width: calc(var(--quantity) * 150px);
+  width: calc(var(--quantity) * 250px);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -362,7 +358,7 @@ h3 {
 
 @keyframes autoRun {
   to {
-    left: -150px;
+    left: -300px;
   }
 }
 
@@ -384,6 +380,7 @@ h3 {
 /* Contact section */
 #contact {
   background-image: linear-gradient(20deg, #9aeb4f, #23e6dc);
+  
 }
 
 .contact-form {
@@ -401,13 +398,11 @@ h3 {
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.76);
   columns: 300px;
-  
-  animation: autoShow;
-  animation-timeline: view();
 }
 
 .form-group {
   margin-bottom: 1.5rem;
+  
 }
 
 .form-group label {
@@ -503,10 +498,6 @@ footer {
   scale: 1.2;
   box-shadow: 0 0 10px 7px #fff;
   background: #fff;
-}
-.container .project-grid {
-  animation: autoShow;
-  animation-timeline: view();
 }
 
 @keyframes autoShow {
