@@ -7,21 +7,21 @@ menuBtn.addEventListener("click", () => {
 });
 
 // Smooth scrolling for navigation links
-// document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-//   anchor.addEventListener("click", function (e) {
-//     e.preventDefault();
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
 
-//     navLinks.classList.remove("active");
+    navLinks.classList.remove("active");
 
-//     const targetId = this.getAttribute("href");
-//     const targetElement = document.querySelector(targetId);
+    const targetId = this.getAttribute("href");
+    const targetElement = document.querySelector(targetId);
 
-//     window.scrollTo({
-//       top: targetElement.offsetTop - 80,
-//       behavior: "smooth",
-//     });
-//   });
-// });
+    window.scrollTo({
+      top: targetElement.offsetTop - 80,
+      behavior: "smooth",
+    });
+  });
+});
 
 // Form submission
 const contactForm = document.getElementById("contactForm");
